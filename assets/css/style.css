@@ -531,9 +531,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Games
 --------------------------------------------------------------*/
-.services .icon-box {
+.games .icon-box {
   padding: 30px;
   position: relative;
   overflow: hidden;
@@ -546,29 +546,29 @@ section {
   border-bottom: 3px solid #fff;
 }
 
-.services .icon-box:hover {
+.games .icon-box:hover {
   transform: translateY(-5px);
   border-color: #ef7f4d;
 }
 
-.services .icon i {
+.games .icon i {
   font-size: 48px;
   line-height: 1;
   margin-bottom: 15px;
   color: #ef7f4d;
 }
 
-.services .title {
+.games .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.games .title a {
   color: #111;
 }
 
-.services .description {
+.games .description {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
