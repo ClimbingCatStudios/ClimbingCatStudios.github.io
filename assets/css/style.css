@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #212529;
+  color: #fff;
 }
 
 a {
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   border-radius: 3px;
   right: 15px;
   bottom: 15px;
-  background: #eb5d1e;
+  background: #cf0e0e;
   color: #fff;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
@@ -52,7 +52,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 .back-to-top:hover {
   color: #fff;
-  background: #ee7843;
+  background: #ed2f2f;
   transition: background 0.2s ease-in-out;
 }
 
@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   z-index: 997;
   transition: all 0.5s;
   padding: 15px 0;
-  background: #fff;
+  background: #111;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -129,12 +129,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-  color: #eb5d1e;
+  color: #cf0e0e;
   text-decoration: none;
 }
 
 .nav-menu .get-started a {
-  background: #eb5d1e;
+  background: #cf0e0e;
   color: #fff;
   border-radius: 50px;
   margin: 0 15px;
@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .nav-menu .get-started a:hover {
-  background: #ee7843;
+  background: #cf0e0e;
   color: #fff;
 }
 
@@ -180,7 +180,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #eb5d1e;
+  color: #cf0e0e;
 }
 
 .nav-menu .drop-down > a:after {
@@ -344,8 +344,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #hero {
   width: 100%;
   height: 70vh;
-  background: #fef8f5;
-  border-bottom: 2px solid #fcebe3;
+  background: #111;
+  /* border-bottom: 2px solid #fcebe3; */
   margin: 72px 0 -72px 0;
 }
 
@@ -354,11 +354,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #4e4039;
+  color: #fc2828;
 }
 
 #hero h2 {
-  color: #a08f86;
+  color: #fff;
   margin-bottom: 50px;
   font-size: 24px;
 }
@@ -374,11 +374,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   transition: 0.5s;
   margin: 10px;
   color: #fff;
-  background: #eb5d1e;
+  background: #cf0e0e;
 }
 
 #hero .btn-get-started:hover {
-  background: #ef7f4d;
+  background: #d34646;
 }
 
 #hero .animated {
@@ -451,10 +451,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
+  background-color: #2f155e;
 }
 
 .section-bg {
-  background-color: #fef8f5;
+  background-color: #52155e;
 }
 
 .section-title {
@@ -463,12 +464,12 @@ section {
 }
 
 .section-title h2 {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 700;
   padding-bottom: 0;
   line-height: 1px;
   margin-bottom: 15px;
-  color: #c2b7b1;
+  color: #cf0e0e;
 }
 
 .section-title p {
@@ -477,7 +478,7 @@ section {
   position: relative;
   font-size: 32px;
   font-weight: 700;
-  color: #4e4039;
+  color: #9c4f4f;
 }
 
 .section-title p::after {
@@ -486,7 +487,7 @@ section {
   display: block;
   width: 60px;
   height: 2px;
-  background: #eb5d1e;
+  background: #cf0e0e;
   bottom: 0;
   left: calc(50% - 30px);
 }
@@ -497,7 +498,7 @@ section {
 .about h3 {
   font-weight: 700;
   font-size: 34px;
-  color: #4e4039;
+  color: #fc2828;
 }
 
 .about h4 {
@@ -510,12 +511,12 @@ section {
 .about i {
   font-size: 48px;
   margin-top: 15px;
-  color: #f39e7a;
+  color: #fc2828;
 }
 
 .about p {
   font-size: 15px;
-  color: #5a6570;
+  /* color: #5a6570; */
 }
 
 @media (max-width: 991px) {
@@ -538,7 +539,7 @@ section {
   position: relative;
   overflow: hidden;
   margin: 0  0 40px 0;
-  background: #fff;
+  background: #111;
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
   border-radius: 15px;
@@ -548,14 +549,14 @@ section {
 
 .games .icon-box:hover {
   transform: translateY(-5px);
-  border-color: #ef7f4d;
+  border-color: #d34646;
 }
 
 .games .icon i {
   font-size: 48px;
   line-height: 1;
   margin-bottom: 15px;
-  color: #ef7f4d;
+  color: #fc2828;
 }
 
 .games .title {
@@ -565,7 +566,7 @@ section {
 }
 
 .games .title a {
-  color: #111;
+  color: #9c4f4f;
 }
 
 .games .description {
@@ -727,10 +728,10 @@ section {
 .faq .faq-list a {
   display: block;
   position: relative;
-  font-family: #eb5d1e;
+  font-family: #cf0e0e;
   font-size: 18px;
   font-weight: 600;
-  color: #eb5d1e;
+  color: #cf0e0e;
 }
 
 .faq .faq-list i {
@@ -747,15 +748,15 @@ section {
 }
 
 .faq .faq-list a.collapse {
-  color: #eb5d1e;
+  color: #cf0e0e;
 }
 
 .faq .faq-list a.collapsed {
-  color: #343a40;
+  /* color: #343a40; */
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #eb5d1e;
+  color: #d34646;
 }
 
 .faq .faq-list a.collapsed i::before {
@@ -766,7 +767,7 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team {
-  background: #fff;
+  background: #111;
   padding: 60px 0;
 }
 
@@ -1073,27 +1074,26 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #fff;
+  background: #111;
   padding: 0 0 30px 0;
-  color: #212529;
+  color: #cf0e0e;
   font-size: 14px;
-  background: #fef8f5;
 }
 
 #footer .footer-newsletter {
   padding: 50px 0;
-  background: #fef8f5;
+  /* background: #fef8f5; */
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 #footer .footer-newsletter h4 {
-  font-size: 24px;
+  font-size: 40px;
   margin: 0 0 20px 0;
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #4e4039;
+  color: #fc2828;
 }
 
 #footer .footer-newsletter form {
@@ -1180,6 +1180,10 @@ section {
   color: #f39e7a;
   font-size: 18px;
   line-height: 1;
+}
+
+#footer .bx {
+  font-size: 100px;
 }
 
 #footer .footer-top .footer-links ul li {
