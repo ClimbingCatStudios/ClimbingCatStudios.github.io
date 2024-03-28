@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Fuku-Cat_V2';
+    src: url('../assets/fonts/Fuku-Cat_V2.ttf') format('truetype');
+}
+
+.heading {
+    font-family: 'Fuku-Cat_V2', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit; /* Makes the link color the same as the surrounding text */
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover, a:focus {
+    color: inherit; /* Optional: Change color on hover/focus to maintain the style */
+    text-decoration: underline; /* Optional: Add underline on hover/focus if desired */
+}
+
+/* Color Variables */
+:root {
+    --color-black: #191919;
+    --color-red: #FF0068;
+    --color-purple: #5700FF;
+    --color-teal: #00FFCE;
+    --color-white: #FFFFFF;
+}
+
+.navbar {
+    /* Keep the navbar above the parallax and other stuff */
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.dark-background {
+    background-color: var(--color-black);
+}
+
+.red-text {
+    color: var(--color-red);
+}
+
+.white-text {
+    color: var(--color-white);
+}
+
+/* Add spacing to to the nav items a little bit*/
+.navbar-nav .nav-item {
+    margin-left: 20px; /* Adjust the spacing as needed */
+    font-size: larger;
+}
+
+/* Hover state */
+.nav-item .nav-link:hover {
+    color: var(--color-purple);
+}
+
+/* Navbar link colours when active*/
+.nav-link.active {
+    color: var(--color-red) !important; /* Default active color */
+}
+/* Specific colors for each page's active state, based on an additional class or ID */
+.nav-link.active.games-page {
+    color: var(--color-purple) !important; /* Red for Games page */
+}
+.nav-link.active.team-page {
+    color: var(--color-teal) !important; /* Purple for Team page */
+}
+
+/* Parallax Stuff Hopefully! */
+#parallax-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Adjust based on your design */
+    overflow: hidden;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0)); /* The color of the overlay */
+    opacity: 0; /* Fully transparent initially */
+    pointer-events: none; /* Allows interaction with the content underneath */
+}
+
+.parallax-item {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto; /* Adjust if necessary */
+    height: 100vh;
+    transition: transform 0.2s, filter 0.2s; /* Smooth transitions */
+    overflow: hidden; /* Ensures the pseudo-element is clipped to the item's bounds */
+}
+
+#logo.parallax-item {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: scale(0.7) translateX(-70%) translateY(40vh) rotate(-50deg);
+    filter: opacity(0.7);
+    width: 20vh;
+    height: 20vh;
+    transition: transform 0.3s, filter 0.2s; /* Smooth transitions */
+}
+
+.fluid-text {
+    font-size: 1vw;
+}
+
+@media (min-width: 768px) {
+    .fluid-text {
+        font-size: calc(0.5rem + 0.5vw); /* Mix a fixed and a viewport-based size */
+    }
+}
+
+@media (min-width: 992px) {
+    .fluid-text {
+        font-size: 1rem; /* Use a fixed size for larger viewports */
+    }
+}
