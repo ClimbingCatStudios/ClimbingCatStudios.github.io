@@ -34,6 +34,7 @@ a:hover, a:focus {
     --color-red: #FF0068;
     --color-purple: #5700FF;
     --color-teal: #00FFCE;
+    --color-dark-teal: #009D7E;
     --color-white: #FFFFFF;
 }
 
@@ -48,12 +49,24 @@ a:hover, a:focus {
     background-color: var(--color-black);
 }
 
+.teal-background {
+    background-color: var(--color-teal);
+}
+
+.dark-teal-background {
+    background-color: var(--color-dark-teal);
+}
+
 .red-text {
     color: var(--color-red);
 }
 
 .white-text {
     color: var(--color-white);
+}
+
+.teal-text {
+    color: var(--color-teal);
 }
 
 /* Add spacing to to the nav items a little bit*/
@@ -137,3 +150,44 @@ a:hover, a:focus {
         font-size: 1rem; /* Use a fixed size for larger viewports */
     }
 }
+
+.about-top-background {
+    background-image: url('../assets/images/backgrounds/about-us-background-top.png'); /* Set the background image */
+    background-size: cover; /* Cover the entire area of the div */
+    background-position: top; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 90vh; /* Set a height for the div if it doesn't have enough content */
+}
+
+.about-bottom-background {
+    background-image: url('../assets/images/backgrounds/about-us-background-bottom.png'); /* Set the background image */
+    background-size: cover; /* Cover the entire area of the div */
+    background-position: top; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 120vh; /* Set a height for the div if it doesn't have enough content */
+}
+  
+.image-container {
+    position: relative; /* Establishes a positioning context */
+    height: 90vh; /* Ensure the div has height, adjust as necessary */
+}
+
+.positioned-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: scale(1.1); /* Scales the image up. Adjust the scale value as needed */
+    transform-origin: bottom right;
+    max-width: 100%; /* Ensure the image does not overflow its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.large-space {
+    padding-top: 50vh; /* Or any value that suits your design */
+}
+
+.no-wrap-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Adds horizontal scrolling if the content overflows */
+  }
