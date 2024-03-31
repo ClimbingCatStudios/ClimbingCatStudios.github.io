@@ -57,8 +57,16 @@ a:hover, a:focus {
     background-color: var(--color-dark-teal);
 }
 
+.purple-background {
+    background-color: var(--color-purple);
+}
+
 .red-text {
     color: var(--color-red);
+}
+
+.purple-text {
+    color: var(--color-purple);
 }
 
 .white-text {
@@ -157,6 +165,15 @@ a:hover, a:focus {
     background-position: top; /* Center the background image */
     background-repeat: no-repeat; /* Do not repeat the image */
     height: 90vh; /* Set a height for the div if it doesn't have enough content */
+}
+
+.games-top-background {
+    background-image: url('../assets/images/games/cats-combined.png'); /* Set the background image */
+    background-size: 50vw; /* Cover the entire area of the div */
+    background-position: left; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-color: var(--color-black);
+    height: 60vh; /* Set a height for the div if it doesn't have enough content */
 }
 
 .about-bottom-background {
